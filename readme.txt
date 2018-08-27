@@ -39,6 +39,9 @@ public void configure(AuthorizationServerEndpointsConfigurer endpoints)
 --------------------
 -------------------
 下面的内容摘自另一个教程，供参考
+
+visit the home page you should see a nicely styled HTML link to "login with Facebook". The link takes you not directly to Facebook, but to the local path that processes the authentication (and sends a redirect to Facebook). Once you have authenticated you get redirected back to the local app, where it now displays your name (assuming you have set up your permissions in Facebook to allow access to that data).
+
 login、logout都被@EnableOAuth2Sso处理了
 
 Spring Security has built in support for a /logout endpoint which will do the right thing for us (clear the session and invalidate the cookie).
